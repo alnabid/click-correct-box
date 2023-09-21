@@ -68,10 +68,16 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;
+    margin: 0 2rem;
+    width: auto;
 }
 #boxes > * {
     display: flex;
     gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 .box {
     background-color: rgb(213, 255, 225);
@@ -82,5 +88,14 @@ body {
 .box:hover {
     background-color: rgb(65, 255, 119);
     border-radius: 0.2rem;
-    padding: 0rem 9rem
+}
+@media screen and (max-width: 1000px) {
+    .box {
+        padding: 2rem 5rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .box {
+        padding: 1rem 2rem;
+    }
 }
