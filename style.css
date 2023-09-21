@@ -88,6 +88,7 @@ body {
 .box:hover {
     background-color: rgb(65, 255, 119);
     border-radius: 0.2rem;
+    cursor: pointer;
 }
 @media screen and (max-width: 1000px) {
     .box {
