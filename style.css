@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #222;
     color: white;
@@ -10,11 +10,11 @@ body {
 .winText, .loseText {
     font-size: 5rem;
     padding: 2rem;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
-.colorTest {
-    color: rgba(255, 41, 41, 0.808);
+_color-picker {
+    color: rgba(43, 255, 0, 0.411);
 }
 
 #container {
@@ -59,7 +59,7 @@ body {
 }
 
 .continue {
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 #boxes {
@@ -99,4 +99,47 @@ body {
     .box {
         padding: 1rem 2rem;
     }
+}
+
+.afterContent {
+    display: none;
+    background-color: crimson;
+    padding: 1rem;
+    width: 10rem;
+    margin: 1rem auto;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.try-limit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.try-limit p {
+    font-weight: bold;
+}
+
+.try-limit input {
+    background-color: rgb(219, 219, 219);
+    padding: 0.5rem 1rem;
+    outline: 0;
+}
+
+#input-submit {
+    padding: 0.5rem 1rem;
+    background-color: crimson;
+    cursor: pointer;
 }
